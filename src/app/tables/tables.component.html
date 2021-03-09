@@ -1,0 +1,28 @@
+<h1>Print Tables</h1>
+Enter Number:<input type="text" [(ngModel)]="number" (keyup)="generateTable()">
+Enter Range:<input type="text" [(ngModel)]="range" (keyup)="generateTable()">
+<ul>
+    <li *ngFor="let ans of result; let x=index">{{number}} * {{x+1}} = {{ans}}</li>
+</ul>
+<br>
+<table>
+    <thead>
+        <tr>
+            <th>Number</th>
+            <th>Multiplication</th>
+            <th>Range</th>
+            <th>Equal To</th>
+            <th>Result</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let ans of result; let x=index">
+            <td>{{number}}</td>
+            <td>X</td>
+            <td>{{x+1}}</td>
+            <td>=</td>
+            <td>{{ans}}</td>
+        </tr>
+
+    </tbody>
+</table>

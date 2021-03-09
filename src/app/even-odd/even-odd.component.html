@@ -1,0 +1,9 @@
+<H1>Even/Odd Check</H1>
+<input type="text" [(ngModel)]='number'>
+<ul>
+    <li><h4 [ngStyle]="{'color':isString()?'red':(checkEvenOrOdd()=='Even Number'?'green':'blue')}">
+        {{isString()?'Only numbers are allowed':checkEvenOrOdd()}}</h4></li>
+    <li><h4>
+        {{primeNumber()}}</h4></li>
+    <li><h4>{{"length of number = " + number.toString().length}}</h4></li>
+</ul>

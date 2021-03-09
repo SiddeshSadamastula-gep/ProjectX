@@ -1,0 +1,5 @@
+<div>
+    <h1>Parent</h1>
+    <p>{{message}}</p>
+    <app-child (message)='updatemessage($event)' [msg]='msg'></app-child>
+</div>

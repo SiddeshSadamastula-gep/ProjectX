@@ -1,0 +1,26 @@
+<p>gadget-toggler</p>
+<div (mouseover)="viewImage()" (mouseout)="ngOnInit()">One plus earbuds</div>
+<div *ngIf="mobileDesc">
+    <img src="https://bit.ly/30lHJ5H">
+    <p>Description : One plus earbuds, Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum nulla et
+        expedita dolorem eaque, laudantium officiis maxime veritatis delectus, maiores autem praesentiumsapiente
+        aspernatur ea asperiores repellendus ex obcaecati molestias!</p>
+</div>
+<div *ngIf="!mobileDesc">
+    <p>Battery : 500mah</p>
+    <p>Warrenty : 1 year</p>
+</div>
+<br>
+<div (mouseover)="heaphoneDesc=true" (mouseout)="heaphoneDesc=false">One plus neckband</div>
+<div *ngIf="heaphoneDesc">
+    <img src="https://bit.ly/3qf5SW9">
+    <p *ngIf="heaphoneDesc">Description :One plus neckband, Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Officia porro, unde molestias a nisi quis recusandae dolore commodi corporis, sapiente ducimus omnis hic
+        libero
+        ut quaerat explicabo corrupti! Saepe, praesentium?</p>
+</div>
+<div *ngIf="!heaphoneDesc">
+    <p>Battery : 800mah</p>
+    <p>Warrenty : 1 year</p>
+
+</div>

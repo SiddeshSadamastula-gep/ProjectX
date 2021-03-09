@@ -1,0 +1,18 @@
+<h4>Enter Search String</h4>
+<input type="text" placeholder="Search" [(ngModel)]='input'>
+<table class="table table-success">
+    <thead>
+        <tr>
+            <th>FName</th>
+            <th>MName</th>
+            <th>LName</th>
+        </tr>
+    </thead>
+<tbody>
+    <tr *ngFor="let data of userData | search:input">
+        <td>{{data.fname}}</td>
+        <td>{{data.mname}}</td>
+        <td>{{data.lname}}</td>
+    </tr>
+</tbody>
+</table>

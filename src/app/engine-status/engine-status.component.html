@@ -1,0 +1,14 @@
+<h2>Engine Status</h2>
+<br>
+<table>
+    <thead>
+        <tr>
+            <th>
+                <img *ngIf='engineStatus' src="{{this.img}}" >
+            </th>
+            <th>
+                <h1 appColorChange *ngIf='engineStatus' (mouseover)='changeDataOn()' (mouseout)='changeDataOff()'>{{this.engine}}</h1>
+            </th>
+        </tr>
+    </thead>
+</table>

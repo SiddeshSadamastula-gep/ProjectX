@@ -1,0 +1,10 @@
+<H1>Show Hide Check</H1>
+<select (change)="choosePicture($event)">
+    <option value="{{pics[0].dValue}}">{{pics[0].dValue}}</option>
+    <option value="{{pics[1].dValue}}">{{pics[1].dValue}}</option>
+    <option value="{{pics[2].dValue}}">{{pics[2].dValue}}</option>
+</select>
+<br>
+<img *ngIf="pics[0].visible" [src]="pics[0].imgUrl" width="300" height="300">
+<img *ngIf="pics[1].visible" [src]="pics[1].imgUrl" width="300" height="300">
+<img *ngIf="pics[2].visible" [src]="pics[2].imgUrl" width="300" height="300">

@@ -1,0 +1,11 @@
+<div class="card" [ngStyle]="{'background-color':task.status == 'in progress'?'orange':(task.status == 'complete'?'green':'red')}">
+    <h3>{{task.taskName}}</h3>
+    <br>
+    <p>
+        {{task.description}}
+    </p>
+    <p>Status : {{task.status}}</p>
+    <button (click)="setStatuss('in progress', task.id)" class="btn btn-success">In progress</button>
+    <button (click)="setStatuss('complete', task.id)" class="btn btn-danger">Complete</button>
+    <br>
+</div>

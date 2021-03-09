@@ -1,0 +1,16 @@
+table {
+    text-align: center;
+	width:50%;
+    border: 1px solid black;
+}
+
+th {
+	background:#000;
+    color: cornsilk;
+    border: 1px solid salmon;
+}
+
+td {
+    background: salmon;
+    border: 1px solid black;
+}
